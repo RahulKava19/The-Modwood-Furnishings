@@ -1,0 +1,121 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+    line-height: 1.7;
+    color: #333;
+    }
+    
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    }
+    
+    .logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #007bff;
+    }
+    
+    .nav-links {
+    list-style: none;
+    display: flex;
+    }
+    
+    .nav-links li {
+    margin-left: 30px;
+    }
+    
+    .nav-links a {
+    color: #555;
+    
+    transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+    color: #007bff;
+    }
+    
+    .content {
+    padding: 40px;
+    }
+    
+    .hero {
+    text-align: center;
+    padding: 100px 30px;
+    background: linear-gradient(135deg, #e6f7ff,
+    #f0f8ff);
+    }
+    
+    .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+    }
+    
+    .hero p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    }
+    
+    .cta-button {
+    background-color: #007bff;
+    
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+    background-color: #0056b3;
+    }
+    
+    .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 30px;
+    flex-wrap: wrap;
+    }
+    
+    .feature {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 30px;
+    }
+    
+    .feature h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+    }
+    
+    .feature p {
+    
+    color: #666;
+    }
+    
+    .about-us {
+    padding: 60px 30px;
+    background-color: #f9f9f9;
+    }
+    
+    .about-us h2 {
+    margin-bottom: 20px;
+    }
