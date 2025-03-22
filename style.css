@@ -270,33 +270,55 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        display: none; /* Completely hides the navbar */
+        display: none;
     }
 
     .hero h1 {
-        font-size: 3em; /* Smaller font on smaller screens */
+        font-size: 3em;
     }
 
     .hero p {
-        font-size: 1.5em; /* Smaller font on smaller screens */
+        font-size: 1.5em;
     }
 
     .product-item {
-        flex-direction: column; /* Stack product images and info */
-        align-items: center; /* Center align */
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center text in product items */
     }
 
     .product-item img {
-        width: 100%; /* Full width images */
+        width: 100%;
         height: auto;
+        max-width: 100%; /* Ensure images don't exceed container width */
+    }
+
+    .product-images {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        width: 100%; /* Ensure images take full width */
+    }
+
+    .product-images img {
+        margin-bottom: 10px; /* Add spacing between stacked images */
     }
 
     .about-contact-container {
-        flex-direction: column; /* Stack about and contact */
+        flex-direction: column;
     }
 
     .about-content,
     .contact-form {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Prevent image overflow */
     }
 }
