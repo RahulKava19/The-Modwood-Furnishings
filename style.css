@@ -269,34 +269,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center; /* Center the navigation items */
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        align-items: center; /* Center the list items */
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-top: 5px;
-        text-align: center; /* Center the link text */
-    }
-
-    .hero {
-        padding: 150px 20px;
-    }
-
-    .hero h1 {
-        font-size: 3em;
-    }
-
-    .product-grid,
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
+    
+        nav {
+            display: none; /* Completely hides the navbar */
+        }
+    
 }
