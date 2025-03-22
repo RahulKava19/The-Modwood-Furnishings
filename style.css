@@ -164,7 +164,7 @@ nav ul li a:hover {
 .about-contact-container {
     display: flex;
     justify-content: space-around;
-    align-items: stretch; /* This is the key change */
+    align-items: stretch;
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -269,9 +269,34 @@ footer {
 }
 
 @media (max-width: 768px) {
-    
-        nav {
-            display: none; /* Completely hides the navbar */
-        }
-    
+    nav {
+        display: none; /* Completely hides the navbar */
+    }
+
+    .hero h1 {
+        font-size: 3em; /* Smaller font on smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.5em; /* Smaller font on smaller screens */
+    }
+
+    .product-item {
+        flex-direction: column; /* Stack product images and info */
+        align-items: center; /* Center align */
+    }
+
+    .product-item img {
+        width: 100%; /* Full width images */
+        height: auto;
+    }
+
+    .about-contact-container {
+        flex-direction: column; /* Stack about and contact */
+    }
+
+    .about-content,
+    .contact-form {
+        width: 100%; /* Full width on mobile */
+    }
 }
