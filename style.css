@@ -268,6 +268,39 @@ footer {
     }
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.product-item img,
+.gallery-item img,
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-images {
+    display: flex;
+    align-items: center;
+}
+
+/* Laptop/Desktop Styles (Inline Images) */
+@media (min-width: 769px) {
+    .product-images {
+        flex-direction: row; /* Horizontal layout for laptop */
+        justify-content: space-around; /* Distribute images evenly */
+    }
+
+    .product-images img {
+        margin: 0 10px; /* Add horizontal spacing between images */
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -284,23 +317,15 @@ footer {
     .product-item {
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Center text in product items */
-    }
-
-    .product-item img {
-        width: 100%;
-        height: auto;
-        max-width: 100%; /* Ensure images don't exceed container width */
+        text-align: center;
     }
 
     .product-images {
-        display: flex;
-        flex-direction: column; /* Stack images vertically */
-        width: 100%; /* Ensure images take full width */
+        flex-direction: column; /* Vertical layout for mobile */
     }
 
     .product-images img {
-        margin-bottom: 10px; /* Add spacing between stacked images */
+        margin-bottom: 10px; /* Add vertical spacing between images */
     }
 
     .about-contact-container {
@@ -313,12 +338,11 @@ footer {
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
     }
 
-    .gallery-item img {
-        width: 100%;
-        height: auto;
-        max-width: 100%; /* Prevent image overflow */
+    .gallery-item {
+        display: flex;
+        justify-content: center;
     }
 }
