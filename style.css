@@ -268,6 +268,7 @@ footer {
     }
 }
 
+
 html, body {
     width: 100%;
     overflow-x: hidden;
@@ -289,15 +290,14 @@ html, body {
     align-items: center;
 }
 
-/* Laptop/Desktop Styles (Inline Images) */
 @media (min-width: 769px) {
     .product-images {
-        flex-direction: row; /* Horizontal layout for laptop */
-        justify-content: space-around; /* Distribute images evenly */
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .product-images img {
-        margin: 0 10px; /* Add horizontal spacing between images */
+        margin: 0 10px;
     }
 }
 
@@ -321,20 +321,22 @@ html, body {
     }
 
     .product-images {
-        flex-direction: column; /* Vertical layout for mobile */
+        flex-direction: column;
     }
 
     .product-images img {
-        margin-bottom: 10px; /* Add vertical spacing between images */
+        margin-bottom: 10px;
     }
 
     .about-contact-container {
         flex-direction: column;
+        padding: 0 10px; /* Add padding to container */
     }
 
     .about-content,
     .contact-form {
         width: 100%;
+        padding: 20px; /* Add padding to content */
     }
 
     .gallery-grid {
