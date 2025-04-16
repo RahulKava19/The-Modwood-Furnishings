@@ -235,6 +235,7 @@ nav ul li a:hover {
 
 .about-content, 
 .contact-form {
+    border: 1px solid #000000;
     flex: 1 1 400px;
     background: white;
     padding: 2rem;
