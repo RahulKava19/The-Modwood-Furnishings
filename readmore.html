@@ -18,6 +18,42 @@
       min-height: 100vh;
     }
 
+    nav {
+      position:absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav .nav-links a:hover {
+      color: #ff9848;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+    }
+    
     .content-container {
       display: flex;
       align-items: flex-start;
@@ -57,7 +93,12 @@
   </style>
 </head>
 <body>
-
+<nav>
+    <div class="logo">&#128310;Your Vision, Our Craft</div>
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+    </div>
+  </nav>
   <div class="content-container">
 
     <div class="text-box">
